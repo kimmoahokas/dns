@@ -39,5 +39,5 @@ D('kimia.fi', REG_NONE,
 
     // zerotier network
     A('raspi.zero', '192.168.192.3'),
-    AAAA('raspi.zero', 'fd56:5799:d8f6:23d7:5699:9337:882f:7288'),
+    AAAA('raspi.zero', 'fd56:5799:d8f6:23d7:5699:9337:882f:7288')
 );
