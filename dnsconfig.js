@@ -3,14 +3,12 @@ var R53 = NewDnsProvider('r53_kimmoahokas', 'ROUTE53');
 
 DEFAULTS(
     DnsProvider(R53),
-    NAMESERVER_TTL('2d') // I'm not plannign to change DNS service often
-    // DefaultTTL("24h") // Most of my zones don't change often
+    NAMESERVER_TTL('2d'), // I'm not plannign to change DNS service often
+    DefaultTTL("24h") // Most of my zones don't change often
 )
 
 // Registered in https://www.domainkeskus.com/
 D('kimia.fi', REG_NONE,
-    NO_PURGE, // In the testing phase don't delete existing records
-
     MX('@', 10, 'mx-1.rightbox.com.'), 
     MX('@', 10, 'mx-2.rightbox.com.'), 
     MX('@', 10, 'mx-3.rightbox.com.'),
@@ -42,7 +40,4 @@ D('kimia.fi', REG_NONE,
     // zerotier network
     A('raspi.zero', '192.168.192.3'),
     AAAA('raspi.zero', 'fd56:5799:d8f6:23d7:5699:9337:882f:7288'),
-    A('fl748.zero', '192.168.192.4'),
-    AAAA('fl748.zero', 'fd56:5799:d8f6:23d7:5699:93fd:5e14:1b17')
-    
 );
