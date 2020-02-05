@@ -9,16 +9,17 @@ DEFAULTS(
 
 // Registered in https://www.domainkeskus.com/
 D('kimia.fi', REG_NONE,
-    MX('@', 10, 'mx-1.rightbox.com.'), 
-    MX('@', 10, 'mx-2.rightbox.com.'), 
+    MX('@', 10, 'mx-1.rightbox.com.'),
+    MX('@', 10, 'mx-2.rightbox.com.'),
     MX('@', 10, 'mx-3.rightbox.com.'),
     TXT('@', 'v=spf1 include:pobox.com'),
+    TXT('@', 'MS=ms69677192'),
     TXT('2016-12.pbsmtp._domainkey', 'v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC169hpRZzPAYhsbmJNYnvLwuixV0Kx1YkRQN/BzoFx5mT2Qg8OMAUgtOj2eW4CTtGPV6HyrfyqDNScXWzdxEXgVBDY3caHcOEcvCkFv2FWKEMYlwQvKrAPliegbchWbF9H6tDZ5VI/7bTtR8S2+Q2Y1Wl7/mvHh2sjQrRypKubVwIDAQAB'),
 
     // GitHub pages apex domain A records
-    A('@', '185.199.108.153'), 
-    A('@', '185.199.109.153'), 
-    A('@', '185.199.110.153'), 
+    A('@', '185.199.108.153'),
+    A('@', '185.199.109.153'),
+    A('@', '185.199.110.153'),
     A('@', '185.199.111.153'),
     CNAME('www', 'kimmoahokas.github.io.'),
 
