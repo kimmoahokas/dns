@@ -27,6 +27,7 @@ D('kimia.fi', REG_NONE,
 
     A('do', '167.71.56.139'),
     AAAA('do', '2a03:b0c0:3:e0::2c4:d001'),
+    R53_ALIAS('test', 'A', 'do.kimia.fi.'),
 
     CNAME('raspi', 'raspi.kimia.dy.fi.'),
 
