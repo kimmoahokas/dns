@@ -25,21 +25,10 @@ D('kimia.fi', REG_NONE,
 
     TXT('_keybase', 'keybase-site-verification=GDZO7TRY6QYle_HbwBpAeMcXK1j_eDVC2SDSXKNzWu0'),
 
-    A('do', '167.71.56.139'),
-    AAAA('do', '2a03:b0c0:3:e0::2c4:d001'),
-    R53_ALIAS('test', 'A', 'do.kimia.fi.'),
-
-    CNAME('raspi', 'raspi.kimia.dy.fi.'),
-
     R53_ALIAS('s3','A', 'd3jcyql5s4o6hf.cloudfront.net.', R53_ZONE('Z2FDTNDATAQYW2')),
 
     // mgmt network
     A('fw.mgmt', '10.0.1.1'),
     A('sw-1.mgmt','10.0.1.2'),
-    A('raspi.mgmt', '10.0.1.3'),
     A('unifi-1.mgmt', '10.0.1.4'),
-
-    // zerotier network
-    A('raspi.zero', '192.168.192.3'),
-    AAAA('raspi.zero', 'fd56:5799:d8f6:23d7:5699:9337:882f:7288')
 );
