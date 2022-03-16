@@ -30,5 +30,5 @@ D('kimia.fi', REG_NONE,
     // mgmt network
     A('fw.mgmt', '10.0.1.1'),
     A('sw-1.mgmt','10.0.1.2'),
-    A('unifi-1.mgmt', '10.0.1.4'),
+    A('unifi-1.mgmt', '10.0.1.4')
 );
